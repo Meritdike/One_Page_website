@@ -1,0 +1,35 @@
+.dark-blue {
+    color: #16507b;
+}
+
+.navbar-nav .nav-link {
+    color: #16507b;
+}
+
+.bg-dark-blue {
+    background-color: #f8fbfe;
+}
+
+.top-hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.top-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#client-section img {
+    filter: grayscale(100%);
+    width: 40%;
+    padding: 15px 0px;
+}
