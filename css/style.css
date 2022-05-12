@@ -33,3 +33,8 @@
     width: 40%;
     padding: 15px 0px;
 }
+
+#client-section img:hover {
+    filter: none;
+    transform: scale(1.2);
+}
