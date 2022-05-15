@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .dark-blue {
     color: #16507b;
 }
@@ -8,6 +14,10 @@
 
 .bg-dark-blue {
     background-color: #f8fbfe;
+}
+
+.bg-dark-blue-testimony {
+    background-color: #f3f9fd;
 }
 
 .top-hero-section {
@@ -24,13 +34,19 @@
     right: 0px;
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
+    background-attachment: fixed;
     z-index: -1;
     opacity: 0.2;
 }
 
+#hero-section .top-hero-section .card-body:hover h4 {
+    color: rgb(36, 135, 206);
+}
+
 #client-section img {
     filter: grayscale(100%);
-    width: 40%;
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
     padding: 15px 0px;
 }
 
@@ -38,3 +54,320 @@
     filter: none;
     transform: scale(1.4);
 }
+
+.transform {
+    transition: all 0.3s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.08);
+}
+
+.testifiers-width {
+    width: 100px;
+}
+
+.quote-color {
+    color: rgb(201, 227, 245);
+    font-size: 24px;
+}
+
+.rounded-4 {
+    border-radius: 6px !important;
+}
+
+.text-grey {
+    color: #444444;
+}
+
+.fs-7 {
+    font-size: 17px;
+}
+
+.fs-8 {
+    font-size: 14px;
+}
+
+.text-off-white {
+    color: #aaaaaa;
+}
+
+.testimonial-box .testimony p {
+    position: relative;
+}
+
+.testimonial-box .testimony p::after {
+    content: "";
+    border-top: 20px solid #f3f9fd;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: none !important;
+    opacity: 1 !important;
+    border: 1px solid #2487ce !important;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+    background-color: #2487ce !important;
+}
+
+.sevices-card-box {
+    padding: 70px 20px 40px 20px !important;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 5%);
+}
+
+.sevices-card-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+}
+
+.sevices-card-box .icon-box {
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+}
+
+.sevices-card-box .icon-box svg {
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+
+.sevices-card-box .icon-box-blue path, .sevices-card-box .icon-box-orange path, .sevices-card-box .icon-box-red path, .sevices-card-box .icon-box-yellow path, .sevices-card-box .icon-box-light-red path, .sevices-card-box .icon-box-teal path {
+    transition: all 0.5s ease 0s;
+    fill: rgb(245, 245, 245);
+}
+
+.sevices-card-box:hover .icon-box-blue path {
+    fill: rgb(71, 174, 255);
+}
+
+.sevices-card-box .icon-box-blue i {
+    font-size: 36px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    color:  rgb(71, 174, 255);
+}
+
+.sevices-card-box:hover .icon-box-blue i, .sevices-card-box:hover .icon-box-orange i, .sevices-card-box:hover .icon-box-red i, .sevices-card-box:hover .icon-box-yellow i, .sevices-card-box:hover .icon-box-light-red i, .sevices-card-box:hover .icon-box-teal i {
+    color: #fff;
+}
+
+.sevices-card-box:hover .icon-box-orange path {
+    fill: rgb(255, 167, 110);
+}
+
+.sevices-card-box .icon-box-orange i {
+    font-size: 36px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    color: rgb(255, 167, 110);
+}
+
+.sevices-card-box:hover .icon-box-red path {
+    fill: rgb(232, 3, 104);
+}
+
+.sevices-card-box .icon-box-red i {
+    font-size: 36px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    color: rgb(232, 3, 104);
+}
+
+.sevices-card-box:hover .icon-box-yellow path {
+    fill: rgb(255, 187, 44);
+}
+
+.sevices-card-box .icon-box-yellow i {
+    font-size: 36px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    color: rgb(255, 187, 44);
+}
+
+.sevices-card-box:hover .icon-box-light-red path {
+    fill: rgb(255, 88, 40);
+}
+
+.sevices-card-box .icon-box-light-red i {
+    font-size: 36px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    color: rgb(255, 88, 40);
+}
+.sevices-card-box:hover .icon-box-teal path {
+    fill: rgb(17, 219, 207);
+}
+
+.sevices-card-box .icon-box-teal i {
+    font-size: 36px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    color: rgb(17, 219, 207);
+}
+
+.btn-outline-white {
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+.btn-outline-white:hover {
+    color: #2487ce !important;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+.blue {
+    background-color: #2487ce;
+}
+
+.white {
+    color: #fff;
+}
+
+#portfolio ul li {
+    list-style: none;
+}
+
+#portfolio ul li:hover {
+    color: rgb(36, 135, 206);
+    cursor: pointer;
+}
+
+.portfolio-image-section {
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
+
+.portfolio-image-section::before {
+    content: "";
+    background: rgba(36, 135, 206, 0.6);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio-image-section:hover::before {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 1;
+}
+
+.portfolio-image-section:hover .portfolio-image-info {
+    opacity: 1;
+}
+
+.portfolio-image-info {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.portfolio-image-info::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 44px;
+    height: 44px;
+    display: block;
+    transition: all 0.5s ease 0s;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    z-index: 1;
+}
+.portfolio-image-info::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    width: 44px;
+    height: 44px;
+    display: block;
+    transition: all 0.5s ease 0s;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    z-index: 1;
+}
+
+.portfolio-image-section:hover .portfolio-image-info::before {
+    top: 15px;
+    left: 15px;
+}
+
+.portfolio-image-section:hover .portfolio-image-info::after  {
+    bottom: 15px;
+    right: 15px;
+}
+
+.card .portfolio-image-section img {
+    width: 100%;
+}
+
+.team-member {
+    box-shadow: 0px 2px 15px rgb(18 66 101 / 8%);
+}
+
+.team-member:hover .social-media {
+    opacity: 1;
+}
+
+.team-member-image {
+    position: relative;
+}
+
+.social-media {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.social-media ul li {
+    list-style: none;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media ul li a i {
+    color: #124265;
+    font-size: 18px;
+}
+
+.social-media ul li a i:hover {
+    color: #469fdf;
+}
+
+
