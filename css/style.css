@@ -156,8 +156,9 @@
     border: 1px solid #2487ce !important;
 }
 
-.swiper-pagination-bullet .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
     background-color: #2487ce !important;
+    opacity: 1 !important;
 }
 
 .sevices-card-box {
