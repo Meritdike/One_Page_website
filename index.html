@@ -156,19 +156,19 @@
         <div class="text-center">
           <div class="row dark-blue py-5 mb-5">
             <div class="col-lg-3 col-md-6 col-6">
-              <h2 class="fw-bold display-5">65</h2>
+              <h2 class="fw-bold display-5 counter" data-val="65">0</h2>
               <p>Happy Clients</p>
             </div>
             <div class="col-lg-3 col-md-6 col-6">
-              <h2 class="fw-bold display-5">85</h2>
+              <h2 class="fw-bold display-5 counter" data-val="85">0</h2>
               <p>Projects</p>
             </div>
             <div class="col-lg-3 col-md-6 col-6">
-              <h2 class="fw-bold display-5">30</h2>
+              <h2 class="fw-bold display-5 counter" data-val="30">0</h2>
               <p>Years of experience</p>
             </div>
             <div class="col-lg-3 col-md-6 col-6">
-              <h2 class="fw-bold display-5">20</h2>
+              <h2 class="fw-bold display-5 counter" data-val="20">0</h2>
               <p>Awards</p>
             </div>
           </div>
@@ -466,8 +466,8 @@
         </div>
         <div class="row">
           <div class="col">
-            <ul class="text-center d-flex justify-content-center button-group filter-button-group">
-              <li class="portfolio-button px-4 fw-bold" data-filter="*">ALL</li>
+            <ul class="text-center d-flex justify-content-center filter-button-group button-group">
+              <li class="portfolio-button px-4 fw-bold active" data-filter="*">ALL</li>
               <li class="portfolio-button px-4 fw-bold" data-filter=".app">APP</li>
               <li class="portfolio-button px-4 fw-bold" data-filter=".card">CARD</li>
               <li class="portfolio-button px-4 fw-bold" data-filter=".web">WEB</li>
@@ -477,7 +477,7 @@
         <div class="row pb-5 mb-3" data-masonry='{"percentPosition": true }' id="portfolio-items">
           <div class="col-lg-4 col-md-6 col-12 app">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 app">
                 <img src="img/portfolio-1.jpg" class="img-fluid" alt="portfolio-1">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">App 1</h5>
@@ -492,7 +492,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 web">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 web">
                 <img src="img/portfolio-2.jpg" class="img-fluid" alt="portfolio-2">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">Web 3</h5>
@@ -507,7 +507,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 app">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 app">
                 <img src="img/portfolio-3.jpg" class="img-fluid" alt="portfolio-3">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">App 2</h5>
@@ -522,7 +522,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 card border-0">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 card border-0">
                 <img src="img/portfolio-4.jpg" class="img-fluid" alt="portfolio-4">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">Card 2</h5>
@@ -537,7 +537,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 web">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 web">
                 <img src="img/portfolio-5.jpg" class="img-fluid" alt="portfolio-5">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">Web 2</h5>
@@ -552,7 +552,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 app">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 app">
                 <img src="img/portfolio-6.jpg" class="img-fluid" alt="portfolio-6">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">App 3</h5>
@@ -567,7 +567,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 card border-0">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 card border-0">
                 <img src="img/portfolio-7.jpg" class="img-fluid" alt="portfolio-7">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">Card 1</h5>
@@ -582,7 +582,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 card border-0">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 card border-0">
                 <img src="img/portfolio-8.jpg" class="img-fluid" alt="portfolio-8">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">Card 3</h5>
@@ -597,7 +597,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 web">
             <div class="card border-0">
-              <div class="portfolio-image-section mb-4">
+              <div class="portfolio-image-section mb-4 web">
                 <img src="img/portfolio-9.jpg" class="img-fluid" alt="portfolio-9">
                 <div class="portfolio-image-info text-center d-flex justify-content-center align-items-center flex-column">
                   <h5 class="fw-bold text-light">Web 3</h5>

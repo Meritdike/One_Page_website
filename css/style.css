@@ -285,7 +285,7 @@
     list-style: none;
 }
 
-#portfolio ul li:hover {
+#portfolio ul li:hover, #portfolio ul li.active {
     color: rgb(36, 135, 206);
     cursor: pointer;
 }
@@ -293,6 +293,10 @@
 .portfolio-image-section {
     transition: all 0.3s ease 0s;
     position: relative;
+}
+
+.portfolio-image-section img {
+    transition: 0.5s;
 }
 
 .portfolio-image-section::before {
