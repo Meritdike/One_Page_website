@@ -16,6 +16,18 @@
     color: #16507b;
 }
 
+.dropdown-item {
+    color: #16507b !important;
+}
+
+.dropdown-item:hover {
+    color: #0d6efd !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent !important;
+}
+
 .primary-color {
     color: #2487ce !important;
 }
